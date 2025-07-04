@@ -5,7 +5,7 @@ A fully responsive and interactive Spotify clone built using **HTML**, **CSS**, 
 
 ## 🚀 Live Site
 
-🔗[ See Portfolio ](https://vikash308.github.io/spotify-clone/)
+🔗[ See website ](https://vikash308.github.io/spotify-clone/)
 ---
 
 ## 🚀 Features
