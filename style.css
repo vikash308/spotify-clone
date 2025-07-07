@@ -8,6 +8,14 @@ body {
     flex-direction: column;
 }
 
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #898989;
+    border-radius: 10px;
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -183,6 +191,8 @@ button {
     margin-right: 1rem;
     margin-left: 1rem;
     margin-bottom: 1rem;
+    flex: 0 0 auto;
+    
 }
 
 .card:hover {
@@ -191,7 +201,9 @@ button {
     transform: scale(1.02);
     transition: all 0.3s ease;
 }
-
+.container::-webkit-scrollbar {
+  display: none; 
+}
 .card img {
     width: 100%;
     border-radius: 0.5rem;
@@ -199,7 +211,9 @@ button {
 
 .container {
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: start;
 }
 
 .card-tittle {
@@ -372,7 +386,13 @@ input[type="checkbox"], .btn_one{
 }
 
 @media (max-width:400px) {
-    .container{
-        justify-content: center;
+    .player{
+        height: 100px;
+    }
+    .part2{
+        gap: 1rem;
+    }
+    .sidebar{
+        position: absolute;
     }
 }
