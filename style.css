@@ -392,7 +392,4 @@ input[type="checkbox"], .btn_one{
     .part2{
         gap: 1rem;
     }
-    .sidebar{
-        position: absolute;
-    }
 }
