@@ -5,6 +5,8 @@ body {
     background-color: black;
     color: white;
     display: flex;
+    height: 100vh;
+    overflow: hidden;
     flex-direction: column;
 }
 
@@ -13,7 +15,7 @@ body::-webkit-scrollbar{
 }
 body::-webkit-scrollbar-thumb{
     background-color: #898989;
-    border-radius: 10px;
+    border-radius: 10;
 }
 
 a {
@@ -43,13 +45,13 @@ a {
 .main-content {
     flex: 1;
     background-color: #121212;
-    overflow-y: auto;
+    overflow: auto;
     padding: 0 1.5rem;
     margin-left: 360px;
 }
 
 .player {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     height: 75px;
     background-color: black;
@@ -198,8 +200,8 @@ button {
 .card:hover {
     background-color: #2a2a2a;
     cursor: pointer;
-    transform: scale(1.02);
-    transition: all 0.3s ease;
+    transform: scale(1.03);
+    transition: all 0.5s ease;
 }
 .container::-webkit-scrollbar {
   display: none; 
@@ -274,6 +276,7 @@ button {
     margin-left: 1rem;
     opacity: 0.7;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .part2 img:hover {
@@ -392,4 +395,21 @@ input[type="checkbox"], .btn_one{
     .part2{
         gap: 1rem;
     }
+    .sidebar{
+        position: absolute;
+    }
 }
+
+#playPauseBtn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
